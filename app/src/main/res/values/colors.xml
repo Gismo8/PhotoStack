@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#59402e</color>
+    <color name="colorPrimaryDark">#28130e</color>
+    <color name="colorAccent">#ffd38c</color>
+    <color name="polaroid_loading_background">#121212</color>
+</resources>

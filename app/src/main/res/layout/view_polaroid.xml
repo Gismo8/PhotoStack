@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/polaroidFrame"
+    android:layout_width="@dimen/polaroid_frame_width"
+    android:layout_height="@dimen/polaroid_frame_height"
+    android:layout_centerInParent="true"
+    android:layout_gravity="center"
+    android:background="@android:color/white"
+    android:elevation="@dimen/cardview_default_elevation"
+    app:cardCornerRadius="@dimen/cardview_default_radius">
+
+    <io.supercharge.shimmerlayout.ShimmerLayout
+        android:id="@+id/shimmerLayout"
+        android:layout_width="@dimen/polaroid_photo_width"
+        android:layout_height="@dimen/polaroid_photo_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/polaroid_photo_top_margin"
+        app:shimmer_animation_duration="2000"
+        app:shimmer_color="@android:color/white"
+        app:shimmer_gradient_center_color_width="0.1"
+        app:shimmer_mask_width="0.2">
+
+        <ImageView
+            android:id="@+id/photo"
+            android:layout_width="@dimen/polaroid_photo_width"
+            android:layout_height="@dimen/polaroid_photo_height"
+            android:background="@color/polaroid_loading_background"
+            android:scaleType="centerCrop" />
+
+    </io.supercharge.shimmerlayout.ShimmerLayout>
+</android.support.v7.widget.CardView>
